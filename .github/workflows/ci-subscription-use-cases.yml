@@ -55,7 +55,7 @@ jobs:
                                                      target/subscriptions-with-per-seat-pricing-1.0.0-SNAPSHOT-jar-with-dependencies.jar
 
             docker-compose up -d && wait_web_server
-            docker-compose exec -T runner bundle exec rspec spec/per_seat_server_dummy_spec.rb
+            docker-compose exec -T runner bundle exec rspec spec/per_seat_server_spec.rb
           done
 
           sample=usage-based-subscriptions
