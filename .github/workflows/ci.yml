@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - dependency-conflict-ci
 
 jobs:
   test:
