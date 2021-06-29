@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - newer-images
 
 jobs:
   test:
@@ -14,6 +15,7 @@ jobs:
         with:
           repository: 'stripe-samples/sample-ci'
           path: 'sample-ci'
+          ref: 'newer-images'
 
       - name: Setup dependencies
         run: |
